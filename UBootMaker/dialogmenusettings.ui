@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogMenuSettings</class>
+ <widget class="QDialog" name="DialogMenuSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>265</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>265</width>
+    <height>246</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>265</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>自定义菜单</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>5</y>
+     <width>32</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_font">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>103</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>菜单字体</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>103</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>菜单颜色</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_selected_color">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>152</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选中项颜色</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_selected_bkcolor">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>152</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选中项背景颜色</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_item_rename">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>修改菜单名称</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_bg_size_dec">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>246</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_bg_size_inc">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>246</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_alpha_inc">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>286</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_alpha_dec">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>286</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_del_menu_bg">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>325</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除菜单背景</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_modify_bg_color">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>325</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>修改背景颜色</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_menu_index">
+   <property name="geometry">
+    <rect>
+     <x>166</x>
+     <y>55</y>
+     <width>58</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>58</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>58</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_index_dec">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>54</y>
+     <width>25</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_index_inc">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>54</y>
+     <width>25</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_menu_bg">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>200</y>
+     <width>110</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加菜单背景</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

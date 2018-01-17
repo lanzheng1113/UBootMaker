@@ -1,0 +1,2 @@
+qmake UBootMaker.pro
+qmake -tp vc -r

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ctrlstartmenumodify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogcancelsupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogfeedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogmenusettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogshortcutquery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogtutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgadvancesetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formdefaultstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formhelpinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formiso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formlocal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formmaincenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="launchmenuitemproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlaunchmenuitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwininterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="startmenuwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LaunchMenuItemProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="ctrlstartmenumodify.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogcancelsupport.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogfeedback.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogmenusettings.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogshortcutquery.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogtutorial.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dlgadvancesetting.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formdefaultstyle.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formhelpinfo.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formiso.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formlocal.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formmaincenter.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qlaunchmenuitem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="qwininterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="startmenuwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_ctrlstartmenumodify.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_ctrlstartmenumodify.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogcancelsupport.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogcancelsupport.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogfeedback.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogfeedback.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogmenusettings.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogmenusettings.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogshortcutquery.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogshortcutquery.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogtutorial.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogtutorial.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dlgadvancesetting.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_dlgadvancesetting.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formdefaultstyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_formdefaultstyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formhelpinfo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_formhelpinfo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formiso.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_formiso.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formlocal.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_formlocal.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formmaincenter.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_formmaincenter.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_qlaunchmenuitem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_qlaunchmenuitem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_startmenuwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_startmenuwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_resource.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_resource.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="ui_dialogcancelsupport.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialogfeedback.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialogmenusettings.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialogshortcutquery.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialogtutorial.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dlgadvancesetting.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_formdefaultstyle.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_formhelpinfo.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_formiso.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_formlocal.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_formmaincenter.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_startmenuwidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="dialogcancelsupport.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogfeedback.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogmenusettings.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogshortcutquery.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialogtutorial.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dlgadvancesetting.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formdefaultstyle.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formhelpinfo.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formiso.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formlocal.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formmaincenter.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="startmenuwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\1_1_Btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Btn1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Checkbox1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Checkbox1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Combo1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_Combo1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_1_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn4_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn4_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn5_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_Btn5_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_btn4_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_2_btn5_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_0_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_10_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_15_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_5_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_8_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_3_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Group_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Group_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_Mode3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_more_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_more_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\1_more_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn4_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\2_Btn4_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_btn3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_list1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_list2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3_list3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\4_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_Btn2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\5_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_Close_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_Close_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_Close_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_btn11_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_btn12_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\91_btn12_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_Close_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_Close_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_Close_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\94_btn2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\99_Loading.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_Close_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_Close_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_Help_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_More_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_More_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_More_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_back.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn0_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn0_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn0_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn4_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn4_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn4_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn5_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn5_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn5_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn6_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn6_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn6_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_btn7_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\9_edit.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Close_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Help_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Help_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\HotKey_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\HotKey_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Min_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Min_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Min_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\bg.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\feedback_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\feedback_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="resource.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

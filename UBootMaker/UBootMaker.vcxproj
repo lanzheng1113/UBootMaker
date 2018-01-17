@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B792B62-EE7E-3CF2-BB6D-07065C64D765}</ProjectGuid>
+    <RootNamespace>UBootMaker</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>UBootMaker</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>UBootMaker</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UBootMaker</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UBootMaker</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtGui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtANGLE;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtCore;release;D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc;$(WZTK_COMMON_2015)\include;%(AdditionalIncludeDirectories);$(BOOST_INC_2015)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\qtmain.lib;shell32.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Widgets.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Gui.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Core.lib;WZTKCommonMD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib;C:\Utils\my_sql\my_sqlx86\lib;C:\Utils\postgresqlx86\pgsql\lib;$(WZTK_COMMON_2015)\lib\ReleaseMD;$(BOOST_LIB_2015);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\UBootMaker.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtGui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtANGLE;D:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtCore;debug;D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc;$(WZTK_COMMON_2015)\include;%(AdditionalIncludeDirectories);$(BOOST_INC_2015)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\qtmaind.lib;shell32.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Guid.lib;D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Cored.lib;WZTKCommonMDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.3\5.9.3\msvc2015\lib;C:\Utils\my_sql\my_sqlx86\lib;C:\Utils\postgresqlx86\pgsql\lib;$(WZTK_COMMON_2015)\lib\DebugMDD;$(BOOST_LIB_2015);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\UBootMaker.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ctrlstartmenumodify.cpp" />
+    <ClCompile Include="dialogcancelsupport.cpp" />
+    <ClCompile Include="dialogfeedback.cpp" />
+    <ClCompile Include="dialogmenusettings.cpp" />
+    <ClCompile Include="dialogshortcutquery.cpp" />
+    <ClCompile Include="dialogtutorial.cpp" />
+    <ClCompile Include="dlgadvancesetting.cpp" />
+    <ClCompile Include="formdefaultstyle.cpp" />
+    <ClCompile Include="formhelpinfo.cpp" />
+    <ClCompile Include="formiso.cpp" />
+    <ClCompile Include="formlocal.cpp" />
+    <ClCompile Include="formmaincenter.cpp" />
+    <ClCompile Include="launchmenuitemproperty.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="qlaunchmenuitem.cpp" />
+    <ClCompile Include="qwininterface.cpp" />
+    <ClCompile Include="startmenuwidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LaunchMenuItemProperty.h" />
+    <CustomBuild Include="ctrlstartmenumodify.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ctrlstartmenumodify.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" ctrlstartmenumodify.h -o release\moc_ctrlstartmenumodify.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ctrlstartmenumodify.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_ctrlstartmenumodify.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ctrlstartmenumodify.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" ctrlstartmenumodify.h -o debug\moc_ctrlstartmenumodify.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ctrlstartmenumodify.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_ctrlstartmenumodify.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogcancelsupport.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogcancelsupport.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogcancelsupport.h -o release\moc_dialogcancelsupport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dialogcancelsupport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dialogcancelsupport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogcancelsupport.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogcancelsupport.h -o debug\moc_dialogcancelsupport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dialogcancelsupport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dialogcancelsupport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogfeedback.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogfeedback.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogfeedback.h -o release\moc_dialogfeedback.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dialogfeedback.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dialogfeedback.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogfeedback.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogfeedback.h -o debug\moc_dialogfeedback.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dialogfeedback.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dialogfeedback.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogmenusettings.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogmenusettings.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogmenusettings.h -o release\moc_dialogmenusettings.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dialogmenusettings.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dialogmenusettings.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogmenusettings.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogmenusettings.h -o debug\moc_dialogmenusettings.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dialogmenusettings.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dialogmenusettings.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogshortcutquery.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogshortcutquery.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogshortcutquery.h -o release\moc_dialogshortcutquery.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dialogshortcutquery.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dialogshortcutquery.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogshortcutquery.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogshortcutquery.h -o debug\moc_dialogshortcutquery.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dialogshortcutquery.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dialogshortcutquery.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogtutorial.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogtutorial.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogtutorial.h -o release\moc_dialogtutorial.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dialogtutorial.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dialogtutorial.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogtutorial.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dialogtutorial.h -o debug\moc_dialogtutorial.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dialogtutorial.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dialogtutorial.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlgadvancesetting.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlgadvancesetting.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dlgadvancesetting.h -o release\moc_dlgadvancesetting.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dlgadvancesetting.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dlgadvancesetting.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlgadvancesetting.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" dlgadvancesetting.h -o debug\moc_dlgadvancesetting.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dlgadvancesetting.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dlgadvancesetting.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formdefaultstyle.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formdefaultstyle.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formdefaultstyle.h -o release\moc_formdefaultstyle.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formdefaultstyle.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formdefaultstyle.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formdefaultstyle.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formdefaultstyle.h -o debug\moc_formdefaultstyle.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formdefaultstyle.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formdefaultstyle.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formhelpinfo.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formhelpinfo.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formhelpinfo.h -o release\moc_formhelpinfo.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formhelpinfo.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formhelpinfo.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formhelpinfo.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formhelpinfo.h -o debug\moc_formhelpinfo.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formhelpinfo.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formhelpinfo.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formiso.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formiso.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formiso.h -o release\moc_formiso.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formiso.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formiso.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formiso.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formiso.h -o debug\moc_formiso.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formiso.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formiso.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formlocal.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formlocal.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formlocal.h -o release\moc_formlocal.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formlocal.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formlocal.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formlocal.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formlocal.h -o debug\moc_formlocal.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formlocal.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formlocal.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formmaincenter.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formmaincenter.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formmaincenter.h -o release\moc_formmaincenter.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC formmaincenter.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_formmaincenter.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formmaincenter.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" formmaincenter.h -o debug\moc_formmaincenter.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC formmaincenter.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_formmaincenter.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="qlaunchmenuitem.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qlaunchmenuitem.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" qlaunchmenuitem.h -o release\moc_qlaunchmenuitem.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC qlaunchmenuitem.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qlaunchmenuitem.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qlaunchmenuitem.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" qlaunchmenuitem.h -o debug\moc_qlaunchmenuitem.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC qlaunchmenuitem.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qlaunchmenuitem.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="qwininterface.h" />
+    <CustomBuild Include="startmenuwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">startmenuwidget.h;release\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" startmenuwidget.h -o release\moc_startmenuwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC startmenuwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_startmenuwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">startmenuwidget.h;debug\moc_predefs.h;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/mkspecs/win32-msvc -ID:/src_history/work/UBootMaker/trunk/UBootMaker -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtWidgets -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtGui -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtANGLE -ID:/Qt/Qt5.9.3/5.9.3/msvc2015/include/QtCore -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\shared" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\um" -I"C:\Program Files (x86)\Windows Kits\8.1\include\\winrt" startmenuwidget.h -o debug\moc_startmenuwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC startmenuwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_startmenuwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_ctrlstartmenumodify.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ctrlstartmenumodify.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogcancelsupport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogcancelsupport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogfeedback.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogfeedback.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogmenusettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogmenusettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogshortcutquery.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogshortcutquery.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dialogtutorial.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dialogtutorial.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dlgadvancesetting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dlgadvancesetting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formdefaultstyle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formdefaultstyle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formhelpinfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formhelpinfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formiso.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formiso.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formlocal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formlocal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_formmaincenter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_formmaincenter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -BxD:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -BxD:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_qlaunchmenuitem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qlaunchmenuitem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_startmenuwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_startmenuwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_resource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_resource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_dialogcancelsupport.h" />
+    <ClInclude Include="ui_dialogfeedback.h" />
+    <ClInclude Include="ui_dialogmenusettings.h" />
+    <ClInclude Include="ui_dialogshortcutquery.h" />
+    <ClInclude Include="ui_dialogtutorial.h" />
+    <ClInclude Include="ui_dlgadvancesetting.h" />
+    <ClInclude Include="ui_formdefaultstyle.h" />
+    <ClInclude Include="ui_formhelpinfo.h" />
+    <ClInclude Include="ui_formiso.h" />
+    <ClInclude Include="ui_formlocal.h" />
+    <ClInclude Include="ui_formmaincenter.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_startmenuwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="dialogcancelsupport.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogcancelsupport.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogcancelsupport.ui -o ui_dialogcancelsupport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dialogcancelsupport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogcancelsupport.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogcancelsupport.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogcancelsupport.ui -o ui_dialogcancelsupport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dialogcancelsupport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogcancelsupport.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogfeedback.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogfeedback.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogfeedback.ui -o ui_dialogfeedback.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dialogfeedback.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogfeedback.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogfeedback.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogfeedback.ui -o ui_dialogfeedback.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dialogfeedback.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogfeedback.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogmenusettings.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogmenusettings.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogmenusettings.ui -o ui_dialogmenusettings.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dialogmenusettings.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogmenusettings.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogmenusettings.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogmenusettings.ui -o ui_dialogmenusettings.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dialogmenusettings.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogmenusettings.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogshortcutquery.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogshortcutquery.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogshortcutquery.ui -o ui_dialogshortcutquery.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dialogshortcutquery.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogshortcutquery.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogshortcutquery.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogshortcutquery.ui -o ui_dialogshortcutquery.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dialogshortcutquery.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogshortcutquery.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialogtutorial.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dialogtutorial.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogtutorial.ui -o ui_dialogtutorial.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dialogtutorial.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogtutorial.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dialogtutorial.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dialogtutorial.ui -o ui_dialogtutorial.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dialogtutorial.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogtutorial.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlgadvancesetting.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlgadvancesetting.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dlgadvancesetting.ui -o ui_dlgadvancesetting.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dlgadvancesetting.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dlgadvancesetting.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlgadvancesetting.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe dlgadvancesetting.ui -o ui_dlgadvancesetting.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dlgadvancesetting.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dlgadvancesetting.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formdefaultstyle.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formdefaultstyle.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formdefaultstyle.ui -o ui_formdefaultstyle.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formdefaultstyle.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formdefaultstyle.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formdefaultstyle.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formdefaultstyle.ui -o ui_formdefaultstyle.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formdefaultstyle.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formdefaultstyle.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formhelpinfo.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formhelpinfo.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formhelpinfo.ui -o ui_formhelpinfo.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formhelpinfo.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formhelpinfo.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formhelpinfo.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formhelpinfo.ui -o ui_formhelpinfo.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formhelpinfo.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formhelpinfo.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formiso.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formiso.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formiso.ui -o ui_formiso.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formiso.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formiso.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formiso.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formiso.ui -o ui_formiso.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formiso.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formiso.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formlocal.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formlocal.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formlocal.ui -o ui_formlocal.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formlocal.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formlocal.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formlocal.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formlocal.ui -o ui_formlocal.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formlocal.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formlocal.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="formmaincenter.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">formmaincenter.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formmaincenter.ui -o ui_formmaincenter.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC formmaincenter.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_formmaincenter.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">formmaincenter.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe formmaincenter.ui -o ui_formmaincenter.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC formmaincenter.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_formmaincenter.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="startmenuwidget.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">startmenuwidget.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe startmenuwidget.ui -o ui_startmenuwidget.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC startmenuwidget.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_startmenuwidget.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">startmenuwidget.ui;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\uic.exe startmenuwidget.ui -o ui_startmenuwidget.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC startmenuwidget.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_startmenuwidget.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\1_1_Btn1_1.jpg" />
+    <None Include="images\1_1_Btn1_2.jpg" />
+    <None Include="images\1_1_Btn1_3.jpg" />
+    <None Include="images\1_1_Checkbox1_1.jpg" />
+    <None Include="images\1_1_Checkbox1_2.jpg" />
+    <None Include="images\1_1_Combo1_1.jpg" />
+    <None Include="images\1_1_Combo1_2.jpg" />
+    <None Include="images\1_1_bg.jpg" />
+    <None Include="images\1_2_Btn3_1.jpg" />
+    <None Include="images\1_2_Btn3_2.jpg" />
+    <None Include="images\1_2_Btn3_3.jpg" />
+    <None Include="images\1_2_Btn4_2.jpg" />
+    <None Include="images\1_2_Btn4_3.jpg" />
+    <None Include="images\1_2_Btn5_2.jpg" />
+    <None Include="images\1_2_Btn5_3.jpg" />
+    <None Include="images\1_2_bg.jpg" />
+    <None Include="images\1_2_btn4_1.jpg" />
+    <None Include="images\1_2_btn5_1.jpg" />
+    <None Include="images\1_3_0_1.jpg" />
+    <None Include="images\1_3_10_1.jpg" />
+    <None Include="images\1_3_15_1.jpg" />
+    <None Include="images\1_3_3_3.jpg" />
+    <None Include="images\1_3_5_1.jpg" />
+    <None Include="images\1_3_8_1.jpg" />
+    <None Include="images\1_3_bg.jpg" />
+    <None Include="images\1_Group_1.jpg" />
+    <None Include="images\1_Group_2.jpg" />
+    <None Include="images\1_Mode1_1.jpg" />
+    <None Include="images\1_Mode1_2.jpg" />
+    <None Include="images\1_Mode1_3.jpg" />
+    <None Include="images\1_Mode2_1.jpg" />
+    <None Include="images\1_Mode2_2.jpg" />
+    <None Include="images\1_Mode2_3.jpg" />
+    <None Include="images\1_Mode3_1.jpg" />
+    <None Include="images\1_Mode3_2.jpg" />
+    <None Include="images\1_Mode3_3.jpg" />
+    <None Include="images\1_more_1.jpg" />
+    <None Include="images\1_more_2.jpg" />
+    <None Include="images\1_more_3.jpg" />
+    <None Include="images\2_Btn1_1.jpg" />
+    <None Include="images\2_Btn1_2.jpg" />
+    <None Include="images\2_Btn2_1.jpg" />
+    <None Include="images\2_Btn2_2.jpg" />
+    <None Include="images\2_Btn3_1.jpg" />
+    <None Include="images\2_Btn3_2.jpg" />
+    <None Include="images\2_Btn4_1.jpg" />
+    <None Include="images\2_Btn4_2.jpg" />
+    <None Include="images\3_bg.jpg" />
+    <None Include="images\3_btn1_1.jpg" />
+    <None Include="images\3_btn1_2.jpg" />
+    <None Include="images\3_btn1_3.jpg" />
+    <None Include="images\3_btn2_1.jpg" />
+    <None Include="images\3_btn2_2.jpg" />
+    <None Include="images\3_btn2_3.jpg" />
+    <None Include="images\3_btn3_1.jpg" />
+    <None Include="images\3_btn3_2.jpg" />
+    <None Include="images\3_btn3_3.jpg" />
+    <None Include="images\3_list1.jpg" />
+    <None Include="images\3_list2.jpg" />
+    <None Include="images\3_list3.jpg" />
+    <None Include="images\4_bg.jpg" />
+    <None Include="images\5_Btn1_1.jpg" />
+    <None Include="images\5_Btn1_2.jpg" />
+    <None Include="images\5_Btn1_3.jpg" />
+    <None Include="images\5_Btn2_1.jpg" />
+    <None Include="images\5_Btn2_2.jpg" />
+    <None Include="images\5_Btn2_3.jpg" />
+    <None Include="images\5_bg.jpg" />
+    <None Include="images\91_Close_1.jpg" />
+    <None Include="images\91_Close_2.jpg" />
+    <None Include="images\91_Close_3.jpg" />
+    <None Include="images\91_bg.jpg" />
+    <None Include="images\91_btn11_1.jpg" />
+    <None Include="images\91_btn12_1.jpg" />
+    <None Include="images\91_btn12_2.jpg" />
+    <None Include="images\94_Close_1.jpg" />
+    <None Include="images\94_Close_2.jpg" />
+    <None Include="images\94_Close_3.jpg" />
+    <None Include="images\94_bg.jpg" />
+    <None Include="images\94_btn1_1.jpg" />
+    <None Include="images\94_btn1_2.jpg" />
+    <None Include="images\94_btn1_3.jpg" />
+    <None Include="images\94_btn2_1.jpg" />
+    <None Include="images\94_btn2_2.jpg" />
+    <None Include="images\94_btn2_3.jpg" />
+    <None Include="images\99_Loading.gif" />
+    <None Include="images\9_Close_1.jpg" />
+    <None Include="images\9_Close_2.jpg" />
+    <None Include="images\9_Help_1.jpg" />
+    <None Include="images\9_More_1.jpg" />
+    <None Include="images\9_More_2.jpg" />
+    <None Include="images\9_More_3.jpg" />
+    <None Include="images\9_back.jpg" />
+    <None Include="images\9_bg.jpg" />
+    <None Include="images\9_btn0_1.jpg" />
+    <None Include="images\9_btn0_2.jpg" />
+    <None Include="images\9_btn0_3.jpg" />
+    <None Include="images\9_btn1_1.jpg" />
+    <None Include="images\9_btn1_2.jpg" />
+    <None Include="images\9_btn1_3.jpg" />
+    <None Include="images\9_btn2_1.jpg" />
+    <None Include="images\9_btn2_2.jpg" />
+    <None Include="images\9_btn2_3.jpg" />
+    <None Include="images\9_btn3_1.jpg" />
+    <None Include="images\9_btn3_2.jpg" />
+    <None Include="images\9_btn3_3.jpg" />
+    <None Include="images\9_btn4_1.jpg" />
+    <None Include="images\9_btn4_2.jpg" />
+    <None Include="images\9_btn4_3.jpg" />
+    <None Include="images\9_btn5_1.jpg" />
+    <None Include="images\9_btn5_2.jpg" />
+    <None Include="images\9_btn5_3.jpg" />
+    <None Include="images\9_btn6_1.jpg" />
+    <None Include="images\9_btn6_2.jpg" />
+    <None Include="images\9_btn6_3.jpg" />
+    <None Include="images\9_btn7_1.jpg" />
+    <None Include="images\9_edit.jpg" />
+    <None Include="images\Close_1.jpg" />
+    <None Include="images\Help_1.jpg" />
+    <None Include="images\Help_2.jpg" />
+    <None Include="images\HotKey_1.jpg" />
+    <None Include="images\HotKey_2.jpg" />
+    <None Include="images\Min_1.jpg" />
+    <None Include="images\Min_2.jpg" />
+    <None Include="images\Min_3.jpg" />
+    <None Include="images\bg.jpg" />
+    <None Include="images\feedback_1.jpg" />
+    <None Include="images\feedback_2.jpg" />
+    <CustomBuild Include="resource.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">resource.qrc;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\rcc.exe;images\3_btn3_3.jpg;images\9_edit.jpg;images\1_1_Btn1_1.jpg;images\1_2_btn4_1.jpg;images\9_btn3_1.jpg;images\5_Btn1_3.jpg;images\9_btn1_3.jpg;images\9_btn4_2.jpg;images\1_2_bg.jpg;images\1_Mode2_3.jpg;images\HotKey_2.jpg;images\1_2_Btn5_2.jpg;images\94_Close_3.jpg;images\9_btn5_3.jpg;images\9_back.jpg;images\1_more_3.jpg;images\Help_2.jpg;images\9_btn0_1.jpg;images\91_Close_2.jpg;images\Min_1.jpg;images\1_Mode1_1.jpg;images\1_Group_2.jpg;images\3_btn2_1.jpg;images\9_Close_2.jpg;images\9_btn7_1.jpg;images\2_Btn3_1.jpg;images\94_btn2_1.jpg;images\3_btn3_2.jpg;images\1_3_8_1.jpg;images\2_Btn4_2.jpg;images\5_Btn1_2.jpg;images\4_bg.jpg;images\3_list3.jpg;images\1_2_btn5_1.jpg;images\1_1_bg.jpg;images\9_btn4_1.jpg;images\9_btn1_2.jpg;images\5_Btn2_3.jpg;images\1_Mode2_2.jpg;images\HotKey_1.jpg;images\94_Close_2.jpg;images\91_btn11_1.jpg;images\9_btn2_3.jpg;images\9_btn5_2.jpg;images\1_3_5_1.jpg;images\1_more_2.jpg;images\1_Mode3_3.jpg;images\Help_1.jpg;images\1_2_Btn3_3.jpg;images\3_btn1_3.jpg;images\91_Close_1.jpg;images\1_3_3_3.jpg;images\1_Group_1.jpg;images\9_Close_1.jpg;images\9_More_3.jpg;images\3_btn3_1.jpg;images\2_Btn1_2.jpg;images\2_Btn4_1.jpg;images\91_btn12_2.jpg;images\9_btn6_3.jpg;images\1_3_10_1.jpg;images\5_Btn1_1.jpg;images\3_list2.jpg;images\94_btn1_3.jpg;images\bg.jpg;images\9_btn1_1.jpg;images\5_Btn2_2.jpg;images\1_1_Combo1_2.jpg;images\1_Mode2_1.jpg;images\94_Close_1.jpg;images\9_btn5_1.jpg;images\9_btn2_2.jpg;images\1_1_Btn1_3.jpg;images\1_more_1.jpg;images\1_Mode3_2.jpg;images\1_2_Btn3_2.jpg;images\3_bg.jpg;images\3_btn1_2.jpg;images\9_btn3_3.jpg;images\9_Help_1.jpg;images\1_2_Btn4_3.jpg;images\9_More_2.jpg;images\2_Btn1_1.jpg;images\91_btn12_1.jpg;images\9_btn6_2.jpg;images\91_bg.jpg;images\9_btn0_3.jpg;images\3_list1.jpg;images\1_Mode1_3.jpg;images\Min_3.jpg;images\2_Btn2_2.jpg;images\94_btn1_2.jpg;images\3_btn2_3.jpg;images\5_Btn2_1.jpg;images\1_1_Combo1_1.jpg;images\1_1_Checkbox1_2.jpg;images\feedback_2.jpg;images\94_btn2_3.jpg;images\1_3_bg.jpg;images\9_btn2_1.jpg;images\1_Mode3_1.jpg;images\1_1_Btn1_2.jpg;images\1_2_Btn3_1.jpg;images\3_btn1_1.jpg;images\9_btn3_2.jpg;images\99_Loading.gif;images\1_2_Btn4_2.jpg;images\9_More_1.jpg;images\9_btn4_3.jpg;images\94_bg.jpg;images\1_2_Btn5_3.jpg;images\1_3_15_1.jpg;images\9_bg.jpg;images\9_btn6_1.jpg;images\9_btn0_2.jpg;images\Close_1.jpg;images\91_Close_3.jpg;images\2_Btn2_1.jpg;images\1_Mode1_2.jpg;images\Min_2.jpg;images\1_3_0_1.jpg;images\94_btn1_1.jpg;images\3_btn2_2.jpg;images\5_bg.jpg;images\1_1_Checkbox1_1.jpg;images\feedback_1.jpg;images\2_Btn3_2.jpg;images\94_btn2_2.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\rcc.exe -name resource resource.qrc -o release\qrc_resource.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC resource.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_resource.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">resource.qrc;D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\rcc.exe;images\3_btn3_3.jpg;images\9_edit.jpg;images\1_1_Btn1_1.jpg;images\1_2_btn4_1.jpg;images\9_btn3_1.jpg;images\5_Btn1_3.jpg;images\9_btn1_3.jpg;images\9_btn4_2.jpg;images\1_2_bg.jpg;images\1_Mode2_3.jpg;images\HotKey_2.jpg;images\1_2_Btn5_2.jpg;images\94_Close_3.jpg;images\9_btn5_3.jpg;images\9_back.jpg;images\1_more_3.jpg;images\Help_2.jpg;images\9_btn0_1.jpg;images\91_Close_2.jpg;images\Min_1.jpg;images\1_Mode1_1.jpg;images\1_Group_2.jpg;images\3_btn2_1.jpg;images\9_Close_2.jpg;images\9_btn7_1.jpg;images\2_Btn3_1.jpg;images\94_btn2_1.jpg;images\3_btn3_2.jpg;images\1_3_8_1.jpg;images\2_Btn4_2.jpg;images\5_Btn1_2.jpg;images\4_bg.jpg;images\3_list3.jpg;images\1_2_btn5_1.jpg;images\1_1_bg.jpg;images\9_btn4_1.jpg;images\9_btn1_2.jpg;images\5_Btn2_3.jpg;images\1_Mode2_2.jpg;images\HotKey_1.jpg;images\94_Close_2.jpg;images\91_btn11_1.jpg;images\9_btn2_3.jpg;images\9_btn5_2.jpg;images\1_3_5_1.jpg;images\1_more_2.jpg;images\1_Mode3_3.jpg;images\Help_1.jpg;images\1_2_Btn3_3.jpg;images\3_btn1_3.jpg;images\91_Close_1.jpg;images\1_3_3_3.jpg;images\1_Group_1.jpg;images\9_Close_1.jpg;images\9_More_3.jpg;images\3_btn3_1.jpg;images\2_Btn1_2.jpg;images\2_Btn4_1.jpg;images\91_btn12_2.jpg;images\9_btn6_3.jpg;images\1_3_10_1.jpg;images\5_Btn1_1.jpg;images\3_list2.jpg;images\94_btn1_3.jpg;images\bg.jpg;images\9_btn1_1.jpg;images\5_Btn2_2.jpg;images\1_1_Combo1_2.jpg;images\1_Mode2_1.jpg;images\94_Close_1.jpg;images\9_btn5_1.jpg;images\9_btn2_2.jpg;images\1_1_Btn1_3.jpg;images\1_more_1.jpg;images\1_Mode3_2.jpg;images\1_2_Btn3_2.jpg;images\3_bg.jpg;images\3_btn1_2.jpg;images\9_btn3_3.jpg;images\9_Help_1.jpg;images\1_2_Btn4_3.jpg;images\9_More_2.jpg;images\2_Btn1_1.jpg;images\91_btn12_1.jpg;images\9_btn6_2.jpg;images\91_bg.jpg;images\9_btn0_3.jpg;images\3_list1.jpg;images\1_Mode1_3.jpg;images\Min_3.jpg;images\2_Btn2_2.jpg;images\94_btn1_2.jpg;images\3_btn2_3.jpg;images\5_Btn2_1.jpg;images\1_1_Combo1_1.jpg;images\1_1_Checkbox1_2.jpg;images\feedback_2.jpg;images\94_btn2_3.jpg;images\1_3_bg.jpg;images\9_btn2_1.jpg;images\1_Mode3_1.jpg;images\1_1_Btn1_2.jpg;images\1_2_Btn3_1.jpg;images\3_btn1_1.jpg;images\9_btn3_2.jpg;images\99_Loading.gif;images\1_2_Btn4_2.jpg;images\9_More_1.jpg;images\9_btn4_3.jpg;images\94_bg.jpg;images\1_2_Btn5_3.jpg;images\1_3_15_1.jpg;images\9_bg.jpg;images\9_btn6_1.jpg;images\9_btn0_2.jpg;images\Close_1.jpg;images\91_Close_3.jpg;images\2_Btn2_1.jpg;images\1_Mode1_2.jpg;images\Min_2.jpg;images\1_3_0_1.jpg;images\94_btn1_1.jpg;images\3_btn2_2.jpg;images\5_bg.jpg;images\1_1_Checkbox1_1.jpg;images\feedback_1.jpg;images\2_Btn3_2.jpg;images\94_btn2_2.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.9.3\5.9.3\msvc2015\bin\rcc.exe -name resource resource.qrc -o debug\qrc_resource.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC resource.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_resource.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
